@@ -7,7 +7,7 @@ export default function PaginationButtons() {
   const startIndex = Number(router.query.start) || 1;
 
   return (
-    <div className="flex px-9 pb-4 justify-between sm:justify-start sm:space-x-44 sm:p-0 text-blue-700">
+    <div className="flex px-9 mb-5 justify-between sm:justify-start sm:space-x-44 sm:p-0 text-blue-700">
       {startIndex > 10 && (
         <Link
           href={`/search?term=${router.query.term}&searchType=${router.query.searchType}&start=${
